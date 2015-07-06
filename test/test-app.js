@@ -166,6 +166,7 @@ describe('App generator', () => {
 
         markup = [
           '    ])',
+          '      .pipe($.cached(\'markup\'))',
           '      .pipe(gulp.dest(config.buildDir));'
         ].join(EOL);
 
@@ -425,6 +426,7 @@ describe('App generator', () => {
 
         markup = [
           '    ])',
+          '      .pipe($.cached(\'markup\'))',
           '      .pipe($.haml())',
           '      .pipe(gulp.dest(config.buildDir));'
         ].join(EOL);
@@ -671,6 +673,7 @@ describe('App generator', () => {
 
         markup = [
           '    ])',
+          '      .pipe($.cached(\'markup\'))',
           '      .pipe($.haml())',
           '      .pipe(gulp.dest(config.buildDir));'
         ].join(EOL);
@@ -913,6 +916,7 @@ describe('App generator', () => {
 
         markup = [
           '    ])',
+          '      .pipe($.cached(\'markup\'))',
           '      .pipe($.jade())',
           '      .pipe(gulp.dest(config.buildDir));'
         ].join(EOL);
@@ -1180,6 +1184,7 @@ describe('App generator', () => {
 
         markup = [
           '    ])',
+          '      .pipe($.cached(\'markup\'))',
           '      .pipe(gulp.dest(config.buildDir));'
         ].join(EOL);
 
